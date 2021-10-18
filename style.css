@@ -43,6 +43,7 @@ body{
     text-transform: uppercase;
     text-shadow: 0px 2px 1px #4f3b53;
 }
+/*BARRA DE NAVEGACION*/
 nav{
     width: 100%;
     background-color: #1a1919;
@@ -58,7 +59,7 @@ nav ul li{
     line-height: 40px;
     float:left;
     border-right: 1px solid white;
-
+    transition: all 300ms;
 }
 nav ul li a{
     text-decoration: none;
@@ -66,7 +67,32 @@ nav ul li a{
     padding-left: 20px;
     padding-right: 20px;
     display: block;
-
 }
+nav> ul> li> a:first-child{
+    border-left: 1px solid white;
+}
+nav> ul> li:hover{
+    background-color: #777777;
+    box-shadow: 0px 0px 4px #000000 outset;
+}
+/*Menu Desplegable*/
 
-
+nav ul li ul{
+    display: none;
+    position: absolute;
+    width: 160px;
+    box-shadow: 0px 2px 1px white outset;
+    z-index: 1;
+}
+nav ul li:hover ul{
+    display: block;
+}
+nav ul li:hover ul li{
+    background-color: #5f5f5f;
+    border-bottom: 1px solid #777777;
+    line-height: 25px;
+    width: 160px;
+}
+nav ul li:hover ul li:hover{
+    background-color: #000000;    
+}
