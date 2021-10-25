@@ -10,6 +10,19 @@
 body{
     background-image: url("images/mooning.png");
 }
+a{
+    color: gray;
+    text-decoration: none;    
+}
+a:hover{
+    color: #000000;    
+}
+.red{
+    color: red!important;
+}
+.blue{
+    color: blue!important;
+}
 /*Cabecera*/
 
 #header{
@@ -96,3 +109,128 @@ nav ul li:hover ul li{
 nav ul li:hover ul li:hover{
     background-color: #000000;    
 }
+/*Contenido de la web*/
+#content{
+    width: 1250px;
+    min-height: 1100px;
+    margin: 0px auto;
+}
+/*BARRA LATERAL*/
+#aside, #frase{
+    clear: both;
+    width: 200px;
+    float: left;
+    margin: 30px;
+    background-color: #c2c2c2;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 2px #ccc;
+    font-family: sans-serif, Arial, Helvetica, sans-serif;
+}
+#frase {
+    padding: 10px;
+    font-size; 14px;
+    font-family: sans-serif;
+    width: 180px;
+}
+#aside .widget{
+    display:block;
+    width: 180px;
+    margin: 5px auto;
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    border-bottom: 1px dashed #777777;
+}
+#aside .widget:last-child{
+    margin-bottom: 20px;
+}
+#aside h3{
+    display: block;
+    color: #1a1919;
+    width: 100%;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 15px;
+    background: #f5e3f8;
+    border: 1px solid;
+    border-left: none;
+    border-right: none;
+    border-color: #cbabd1;
+}
+/*FORMULARIOS*/
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select{
+    border: 1px solid #c9c9c9;
+    box-shadow: 0px 0px 2px #ccc inset;
+    background: white;
+    padding: 1px; 
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: gray;
+    transition: all 300mx;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus{
+    border: 1px solid #7f7f7f;
+    color: blue;
+}
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button{
+    display:block;
+    border-radius: 2px;
+    border:1px solid black;
+    width: 60px;
+    padding:3px;
+    background-color:#777777;
+    cursor: pointer;
+    color:white;
+}
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover{
+    box-shadow: 0px 0px 2px #cbabd1;
+}
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+button:active{
+    box-shadow: 0px 0px 3px pink inset;
+    text-shadow: 0px 0px 1px #ccc; 
+}
+#aside li{
+    margin-top:8px;
+    margin-bottom:5px;
+    margin-left: 20px;
+}
+/*FORMULARIOS BARRA LATERAL*/
+#aside div label,
+#aside div input[type="text"],
+#aside div input[type="email"],
+#aside div input[type="password"],
+#aside div a{
+    display:block;
+    width: 95%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+#aside div input[type="button"],
+#aside div input[type="subbit"],
+#aside div button{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#aside input,
+#aside label{
+    margin: 0px auto;
+    text-align: center;
+}
+
