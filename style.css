@@ -1,6 +1,16 @@
 /*Fuentes*/
-
-
+@font-face{
+    font-family: "fjalla";
+    src: url("fuentes/FjallaOne-Regular.ttf") format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face{
+    font-family: "simbolos";
+    src: url("fuentes/Entypo.otf#EntypoRegular") format('opentype');
+    font-style: normal;
+    font-weight: normal;
+}
 /*Estilos generales, aplicados a todo el sitio*/
 *{
     padding: 0px;
@@ -12,16 +22,34 @@ body{
 }
 a{
     color: gray;
-    text-decoration: none;    
+    text-decoration: none;
 }
 a:hover{
     color: #000000;    
 }
-.red{
+.red,
+.rojo{
     color: red!important;
 }
-.blue{
+.blue,
+.azul{
     color: blue!important;
+}
+.naranja{
+    color: orange;
+}
+.icon{
+    font-family: "simbolos";
+    font-size: 40px;
+    float: left;
+    position: relative;
+    padding-bottom: 40px;
+    bottom: 20px;
+    margin-right: 5px;
+}
+.clearfix{
+    float: none;
+    clear: both;
 }
 /*Cabecera*/
 
@@ -117,7 +145,7 @@ nav ul li:hover ul li:hover{
 }
 /*BARRA LATERAL*/
 #aside, #frase{
-    clear: both;
+    
     width: 200px;
     float: left;
     margin: 30px;
@@ -128,7 +156,7 @@ nav ul li:hover ul li:hover{
 }
 #frase {
     padding: 10px;
-    font-size; 14px;
+    font-size: 14px;
     font-family: sans-serif;
     width: 180px;
 }
@@ -232,5 +260,73 @@ button:active{
 #aside label{
     margin: 0px auto;
     text-align: center;
+}
+/*SECCIONES INTERNAS*/
+#sections{
+    float: right;
+    width: 75%;
+    font-family: sans-serif, Arial, Helvetica;
+    margin-right: 20px;
+} 
+#sections .titulo{
+    font-family: "fjalla";
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: -20px;
+    padding-top: 20px;
+    padding-bottom: 10px; 
+    border-bottom: 1px solid #ccc;
+}
+#sections section{
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 4px #c9c9c9;
+    color: #333333;
+    font-size: 16px;
+    overflow: hidden;
+}
+#sections article{
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#sections .date{
+    color: gray;
+    font-size: 14px;
+}
+#sections .stikerOne,
+#sections .stikerTwo{
+    position: absolute;
+    margin-top: -38px;
+    z-index: 0;
+}
+#sections .stikerTwo{
+    margin-left: 860px;
+}
+#sections .stikerOne{
+    margin-right: -20px;
+    left: 290px;
+}
+
+#history{
+    float: right;
+    margin-top: 20px;
+    font-family: Arial;
+}
+
+/*Pie de página*/
+#footer{
+    with: 100%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 40px; 
+    background-color: #333333;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;   
 }
 
